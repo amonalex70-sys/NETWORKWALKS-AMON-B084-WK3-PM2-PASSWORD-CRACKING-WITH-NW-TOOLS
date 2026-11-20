@@ -79,7 +79,7 @@ It supports hands-on practice in the following areas:
 
 ## Step 1: Download the Password-Protected PDF
 
-The password-protected PDF document was downloaded from the official NetworkWalks project task page and saved locally for the password recovery exercise.
+A password-protected PDF document was obtained and saved locally to serve as the target file for the password recovery exercise.
 
 **Target File:**
 
@@ -87,18 +87,15 @@ The password-protected PDF document was downloaded from the official NetworkWalk
 My Locked PDF1.pdf
 ```
 
-**Project Resource:** [NetworkWalks Password Cracking Project Task](https://networkwalks.com/project-task-lab-password-cracking-with-networkwalks-tools/)
+The document was prepared for hash extraction and subsequent password recovery using the available online tools.
+
 
 ## Step 2: Access the NetworkWalks Hash Calculator
 
 The NetworkWalks Hash Calculator was opened in a web browser to prepare for extracting the password hash from the protected PDF document.
 
-**Tool:** NetworkWalks Hash Calculator
-
 <img width="853" height="587" alt="Networkwalk-Tool" src="https://github.com/user-attachments/assets/afc8175a-2713-4040-a2a8-71a6faba7f76" />
 
-
-**Website:** https://networkwalks.com/hash-calculator/
 
 ## Step 3: Extract the PDF Password Hash
 
@@ -106,19 +103,20 @@ The downloaded PDF document was uploaded to the NetworkWalks Hash Calculator usi
 
 The tool processed the document and generated an extractable password hash in PDF format, beginning with the `$pdf$` identifier.
 
+
 ## Step 4: Copy the Extracted PDF Hash
 
 The complete PDF password hash was copied from the Hash Calculator output.
 
 **Important:** The entire hash value, starting with `$pdf$`, must be copied without missing or modifying any characters.
 
+
 ## Step 5: Access the NetworkWalks Password Cracker
 
 The NetworkWalks Password Cracker was opened in a new browser tab to perform the password recovery process.
 
-**Tool:** NetworkWalks Password Cracker
+<img width="1077" height="600" alt="NTC" src="https://github.com/user-attachments/assets/96db33c3-300d-49bc-89bf-0e0d1c48d3bc" />
 
-**Website:** https://networkwalks.com/password-cracker/
 
 ## Step 6: Submit the Hash and Start the Dictionary Attack
 
@@ -127,6 +125,7 @@ The extracted PDF hash was pasted into the password input field of the NetworkWa
 The built-in password list containing 100 password candidates was selected for the exercise. The attack was initiated by clicking the **START CRACKING** button.
 
 The tool tested the available password candidates against the submitted PDF hash.
+
 
 ## Step 7: Retrieve the Recovered Password
 
@@ -139,6 +138,7 @@ password1
 ```
 
 The recovery time depends on the password candidates and the complexity of the target password.
+
 
 ## Step 8: Enter the Recovered Password
 
@@ -157,3 +157,97 @@ After entering the recovered password, the PDF document opened successfully and 
 The document confirmed that the first cybersecurity flag had been captured, marking the successful completion of the lab.
 
 **Result:** Successfully recovered the PDF password and accessed the protected document.dance, mentorship, and support throughout this learning journey.**
+
+
+# 🐞 Problems Encountered & Solutions
+
+Documenting challenges and solutions helps improve troubleshooting skills and provides useful references for future password-security exercises.
+
+## Problem 1: Extracting the PDF Password Hash
+
+The password-protected PDF needed to be processed correctly before its hash could be used for password recovery.
+
+**Solution:** The NetworkWalks Hash Calculator was used to upload and process the PDF document. The complete hash value beginning with `$pdf$` was copied for the next stage.
+
+## Problem 2: Submitting the Complete Hash
+
+The password recovery process requires the complete extracted PDF hash. Missing characters or incomplete hash values may prevent the tool from processing the submission correctly.
+
+**Solution:** The extracted hash was copied in full from the Hash Calculator and pasted into the NetworkWalks Password Cracker.
+
+## Problem 3: Password Recovery
+
+The password recovery process required testing available password candidates against the submitted PDF hash.
+
+**Solution:** The built-in password list was used to perform a dictionary attack. The tool identified the matching password, `password1`, which was subsequently used to unlock the PDF document.
+
+---
+
+# 💡 What I Learned
+
+Through this project, I gained practical experience in password recovery using NetworkWalks online cybersecurity tools.
+
+The most important concepts I learned include:
+
+### 1. Password Hashing and PDF Protection
+
+I learned how password-protected PDF documents use encryption and how password hashes can be extracted for security testing and password recovery.
+
+### 2. Hash Extraction
+
+I learned how to use the NetworkWalks Hash Calculator to process a protected PDF document and extract its password hash in the `$pdf$` format.
+
+### 3. Online Password Cracking Tools
+
+I gained experience using the NetworkWalks Password Cracker to process extracted hashes and attempt password recovery through a web-based interface.
+
+### 4. Dictionary Attacks
+
+I learned how dictionary-based attacks work by testing password candidates against an extracted hash until a matching password is identified.
+
+### 5. Password Recovery and Verification
+
+I learned how to examine password recovery results and verify the recovered password by opening the original protected PDF document.
+
+### 6. Troubleshooting and Documentation
+
+I improved my ability to follow a structured password recovery workflow, identify potential issues during hash extraction and submission, and document practical results using screenshots and explanations.
+
+### 7. Password Security Awareness
+
+I developed a better understanding of why weak and commonly used passwords are vulnerable to dictionary attacks and why strong, unique passwords are essential for protecting sensitive information.
+
+---
+
+# 🔐 Security & Ethical Use
+
+This project was conducted strictly for educational purposes as part of the NetworkWalks Cybersecurity Program.
+
+Password-cracking techniques should only be applied to documents you own or have explicit authorization to test.
+
+Never use these tools to access protected files, confidential information, or documents without permission.
+
+---
+
+# 🔗 Tools & Resources
+
+- **NetworkWalks Project Task:** https://networkwalks.com/project-task-lab-password-cracking-with-networkwalks-tools/
+- **NetworkWalks Hash Calculator:** https://networkwalks.com/hash-calculator/
+- **NetworkWalks Password Cracker:** https://networkwalks.com/password-cracker/
+- **NetworkWalks:** https://networkwalks.com/
+
+---
+
+# 👤 Author
+
+**Amon Alex**  
+Cybersecurity Student B084 | Electronics, Telecommunications & Cybersecurity
+
+**LinkedIn:** [Amon Alex](https://www.linkedin.com/in/amon-lowasa-60877a42a/)
+
+## 📌 Project Information
+
+**Program Name:** Cybersecurity at NetworkWalks | **Week:** 03 | **Project Module:** W3-PM2 | **Project:** Password Cracking with NetworkWalks Tools | **Repository:** GitHub
+
+
+
